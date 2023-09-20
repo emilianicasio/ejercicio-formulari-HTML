@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+section{
+    background-color: rgb(190, 200, 216);
+    border: black solid 0.5px;
+    width: 45%;
+    padding: 25px;
+    margin: auto;
+    border-radius: 15px;
+    margin-bottom: 40px;
+}
+
+
+
+input{ margin-bottom: 10px;
+}
+h4{
+    margin-bottom: 25px;
+    margin-top: 15px;
+}
+
+.submit{
+    padding: 12px;
+    width: 150px;
+   
+}

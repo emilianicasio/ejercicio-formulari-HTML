@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Formularios</title>
+</head>
+<body>
+    
+    <section>
+        <h2>Formularios viejuners</h2>
+        <form>
+            <h4>Tu:</h4>
+            <label for="name">Nombre:</label>
+            <input type="text" name="name" id="name" placeholder="tu nombre aquí" autofocus>
+            <br>
+            <label for="lastname">Apellido:</label>
+            <input type="text" name="lastname" id="lastname" placeholder="tu apellido aquí">
+            <br>
+            <label for="'age">Edad:</label>
+            <input type="number"  name="age" id="age" min="1" max="115">
+
+            <p>Sexo:</p>
+            <label for="'femenino">Femenino</label>
+            <input type="radio" id="femenino" value="f" name="sexo">
+            <label for="'masculino">Masculino</label>
+            <input type="radio" id="masculino" value="m" name="sexo">
+            <label for="'otro">Otro</label>
+            <input type="radio" id="otro" value="o" name="sexo">
+
+            <!-- como lograr marcar solo uno? -->
+            <p>Me siento viejuner:</p> 
+            <label for="si">si</label>
+            <input id="si" type="checkbox" name="viejuner" value="1">
+
+            <label for="no">no</label>
+            <input id="no" type="checkbox" name="viejuner" value="2"> <br>
+
+            <label>Escribe algo sobre tí:</label><br>
+            <textarea id="blog" name="blog" rows="9" cols="50" >
+            </textarea>
+
+
+            <h4>Tus Circunstancias:</h4>
+
+            <label for="email">Correo electrónico:</label>
+            <input id='email'type="email" placeholder="tucorreo@mail.com"><br>
+
+            <label for="telefono">Teléfono:</label>
+            <input id="telefono" type='tel' placeholder="tu teléfono aquí">
+            <br>
+            <button type="button">My Button</button>
+
+          </form>
+    </section>
+
+ 
+    <section>
+        <h2>Los ladronzuelos de bicicletas</h2>
+        <form action="">
+            <label for="fecha">Día:</label>
+            <input id="fecha" type="date">
+            <br>
+            <label for="hora">Hora:</label>
+            <input id="hora" type="time">
+            <br>
+            <label for="color">Color de la bicicleta:</label>
+            <input id='color'type="color">
+            <br>
+            <!-- como mostrar valor sin js? -->
+            <label for="precio">Rango de precio:</label>
+            <span>$0</span>
+            <input id="precio" type="range" min="0" max="100" step="5">
+            <span>$300</span>
+            <br>
+            <!-- es asi? -->
+            <p>Tipo de bicileta:</p>
+            <ul>
+                <li>
+                    <label for="paseo">Paseo</label>
+                    <select id="paseo">
+                        <option value="señorial">Señoral</option>
+                        <option value="anti">Anti-plebeyos</option>
+                        <option value="hombro">PorEncimaDelHombro</option>
+
+                    </select>
+                </li>
+                <li>
+                    <label for="montaña">Montaña</label>
+                    <select id="paseo">
+                        <option value="gamusinos">Gamusinos</option>  
+                        <option value="flores">Hueleflores premium</option>
+                        <option value="fango">Fango lover</option>
+                    </select>
+                </li>
+
+                <li>
+                    <label for="paseo">Carreras</label>
+                    <select id="paseo">
+                        <option value="metroymedio">Metroymedio</option>
+                        <option value="tarde">3 de la tarde. Fluorescente edition</option>
+                        <option value="grupitors">Grupitors</option>
+
+                    </select>
+                </li>
+            </ul>
+         
+            <label for="accesorios>">Accesorios:</label>
+            <br>
+            <select multiple="multiple" id="accesorios">
+                <option value="ruedines">Ruedines</option>
+                <option value="pegatinas">Pegatinas</option>
+                <option value="cestita">Cestita</option>
+                <option value="bomba">Bomba de aire</option>
+                <option value="timbre">Timbre</option>
+                <option value="foco">Foco</option>
+            </select>
+            <br>
+            <label for="marca">Que marca era?:</label>
+            <input type="text" list="marcas">
+            <datalist id="marcas">
+                <option>specialized</option>
+                <option>trek</option>
+                <option>meridar</option>
+                <option>scott</option>
+                <option>giant</option>
+                <option>cube</option>
+                <option>lapierre</option>
+                <option>orbea</option>
+                <option>bmc</option>
+                <option>canyon</option>
+            </datalist>
+  <br>
+  <button type="button">My Button</button>
+
+
+            
+            
+        </form>
+    </section>
+
+</body>
+</html>
